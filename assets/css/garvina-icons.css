@@ -1,0 +1,378 @@
+@font-face {
+  font-family: 'garvina-icons';
+  src:  url('../fonts/garvina-icons.eot?sy3jd6');
+  src:  url('../fonts/garvina-icons.eot?sy3jd6#iefix') format('embedded-opentype'),
+    url('../fonts/garvina-icons.ttf?sy3jd6') format('truetype'),
+    url('../fonts/garvina-icons.woff?sy3jd6') format('woff'),
+    url('../fonts/garvina-icons.svg?sy3jd6#garvina-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="tji-"], [class*=" tji-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'garvina-icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.tji-check-icons:before {
+  content: "\e938";
+}
+.tji-agriculture:before {
+  content: "\e900";
+}
+.tji-award:before {
+  content: "\e901";
+}
+.tji-bouquet:before {
+  content: "\e902";
+}
+.tji-broken:before {
+  content: "\e903";
+}
+.tji-broom:before {
+  content: "\e904";
+}
+.tji-broom-1:before {
+  content: "\e905";
+}
+.tji-brush:before {
+  content: "\e906";
+}
+.tji-check:before {
+  content: "\e907";
+}
+.tji-chemical:before {
+  content: "\e908";
+}
+.tji-cherry-blossom:before {
+  content: "\e909";
+}
+.tji-concrete-mixer:before {
+  content: "\e90a";
+}
+.tji-concrete-mixer-1:before {
+  content: "\e90b";
+}
+.tji-contamination:before {
+  content: "\e90c";
+}
+.tji-cutting:before {
+  content: "\e90d";
+}
+.tji-dandelion:before {
+  content: "\e90e";
+}
+.tji-dining-table:before {
+  content: "\e90f";
+}
+.tji-drain:before {
+  content: "\e910";
+}
+.tji-drainage:before {
+  content: "\e911";
+}
+.tji-farmer:before {
+  content: "\e912";
+}
+.tji-fence:before {
+  content: "\e913";
+}
+.tji-fence-1:before {
+  content: "\e914";
+}
+.tji-fence-2:before {
+  content: "\e915";
+}
+.tji-fence-3:before {
+  content: "\e916";
+}
+.tji-fertilizer:before {
+  content: "\e917";
+}
+.tji-fertilizer-1:before {
+  content: "\e918";
+}
+.tji-fertilizer-2:before {
+  content: "\e919";
+}
+.tji-field:before {
+  content: "\e91a";
+}
+.tji-flower:before {
+  content: "\e91b";
+}
+.tji-flower-1:before {
+  content: "\e91c";
+}
+.tji-flower-2:before {
+  content: "\e91d";
+}
+.tji-flower-bouquet:before {
+  content: "\e91e";
+}
+.tji-flower-pot:before {
+  content: "\e91f";
+}
+.tji-forest:before {
+  content: "\e920";
+}
+.tji-fruit:before {
+  content: "\e921";
+}
+.tji-fruit-1:before {
+  content: "\e922";
+}
+.tji-garden:before {
+  content: "\e923";
+}
+.tji-gardener:before {
+  content: "\e924";
+}
+.tji-gardening:before {
+  content: "\e925";
+}
+.tji-gardening-1:before {
+  content: "\e926";
+}
+.tji-gardening-scissors:before {
+  content: "\e927";
+}
+.tji-grass:before {
+  content: "\e928";
+}
+.tji-grass-1:before {
+  content: "\e929";
+}
+.tji-grass-2:before {
+  content: "\e92a";
+}
+.tji-growth:before {
+  content: "\e92b";
+}
+.tji-healthy-food:before {
+  content: "\e92c";
+}
+.tji-healthy-food-1:before {
+  content: "\e92d";
+}
+.tji-hedge:before {
+  content: "\e92e";
+}
+.tji-insecticide:before {
+  content: "\e92f";
+}
+.tji-irrigation:before {
+  content: "\e930";
+}
+.tji-landscape:before {
+  content: "\e931";
+}
+.tji-landscape-1:before {
+  content: "\e932";
+}
+.tji-landscape-2:before {
+  content: "\e933";
+}
+.tji-lawn-mower:before {
+  content: "\e934";
+}
+.tji-lawn-mower-1:before {
+  content: "\e935";
+}
+.tji-leaf:before {
+  content: "\e936";
+}
+.tji-left-quote:before {
+  content: "\e937";
+}
+.tji-mixer-truck:before {
+  content: "\e939";
+}
+.tji-mixer-truck-1:before {
+  content: "\e93a";
+}
+.tji-mosquito:before {
+  content: "\e93b";
+}
+.tji-mountain:before {
+  content: "\e93c";
+}
+.tji-nature:before {
+  content: "\e93d";
+}
+.tji-nature-1:before {
+  content: "\e93e";
+}
+.tji-panoramic-view:before {
+  content: "\e93f";
+}
+.tji-path:before {
+  content: "\e940";
+}
+.tji-pathway:before {
+  content: "\e941";
+}
+.tji-pest-control:before {
+  content: "\e942";
+}
+.tji-pesticide:before {
+  content: "\e943";
+}
+.tji-plank-fences:before {
+  content: "\e944";
+}
+.tji-plant:before {
+  content: "\e945";
+}
+.tji-planting:before {
+  content: "\e946";
+}
+.tji-planting-1:before {
+  content: "\e947";
+}
+.tji-planting-2:before {
+  content: "\e948";
+}
+.tji-pond:before {
+  content: "\e949";
+}
+.tji-pond-1:before {
+  content: "\e94a";
+}
+.tji-pond-2:before {
+  content: "\e94b";
+}
+.tji-reputation:before {
+  content: "\e94c";
+}
+.tji-right-up:before {
+  content: "\e94d";
+}
+.tji-river:before {
+  content: "\e94e";
+}
+.tji-road:before {
+  content: "\e94f";
+}
+.tji-sack:before {
+  content: "\e950";
+}
+.tji-seating:before {
+  content: "\e951";
+}
+.tji-seed:before {
+  content: "\e952";
+}
+.tji-seed-bag:before {
+  content: "\e953";
+}
+.tji-seeding:before {
+  content: "\e954";
+}
+.tji-seeding-1:before {
+  content: "\e955";
+}
+.tji-seeds:before {
+  content: "\e956";
+}
+.tji-sewage:before {
+  content: "\e957";
+}
+.tji-sewage-1:before {
+  content: "\e958";
+}
+.tji-sewage-2:before {
+  content: "\e959";
+}
+.tji-shears:before {
+  content: "\e95a";
+}
+.tji-shears-1:before {
+  content: "\e95b";
+}
+.tji-shovel:before {
+  content: "\e95c";
+}
+.tji-snow:before {
+  content: "\e95d";
+}
+.tji-sow:before {
+  content: "\e95e";
+}
+.tji-sprinkle:before {
+  content: "\e95f";
+}
+.tji-sprout:before {
+  content: "\e960";
+}
+.tji-sweeping-broom:before {
+  content: "\e961";
+}
+.tji-table:before {
+  content: "\e962";
+}
+.tji-terrace:before {
+  content: "\e963";
+}
+.tji-terrace-1:before {
+  content: "\e964";
+}
+.tji-terrace-2:before {
+  content: "\e965";
+}
+.tji-time:before {
+  content: "\e966";
+}
+.tji-tool:before {
+  content: "\e967";
+}
+.tji-trees:before {
+  content: "\e968";
+}
+.tji-trimming:before {
+  content: "\e969";
+}
+.tji-trophy:before {
+  content: "\e96a";
+}
+.tji-truck:before {
+  content: "\e96b";
+}
+.tji-vegetation:before {
+  content: "\e96c";
+}
+.tji-vertical-farming:before {
+  content: "\e96d";
+}
+.tji-wall:before {
+  content: "\e96e";
+}
+.tji-wall-1:before {
+  content: "\e96f";
+}
+.tji-water-display:before {
+  content: "\e970";
+}
+.tji-watering:before {
+  content: "\e971";
+}
+.tji-watering-can:before {
+  content: "\e972";
+}
+.tji-watering-plants:before {
+  content: "\e973";
+}
+.tji-water-system:before {
+  content: "\e974";
+}
