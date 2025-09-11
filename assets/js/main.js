@@ -79,12 +79,16 @@
       var pagescroll = $(window).scrollTop();
       if(pagescroll > 100){
          $(".scroll-to-top").addClass("scroll-to-top-visible");
+         $(".scroll-to-top2").addClass("scroll-to-top-visible");
       }else{
          $(".scroll-to-top").removeClass("scroll-to-top-visible");
+         $(".scroll-to-top2").addClass("scroll-to-top-visible");
+
       }
    });
+   
 
-   $(".scroll-to-top").click(function() {
+   $("#scroll-to-top").click(function() {
       $("html, body").animate({ scrollTop: 0 }, "slow");
       return false;
    });

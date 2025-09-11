@@ -403,6 +403,10 @@ i {
 /**
   Buttons CSS
 */
+.mega-menu{
+  padding:20px;
+  width: 800px!important;
+}
 .tj-header-btn {
   display: inline-flex;
   align-items: center;
@@ -413,10 +417,10 @@ i {
   line-height: 1;
   text-transform: uppercase;
   border-radius: 150px;
-  padding: 23px 40px;
+  padding: 18px 36px;
   letter-spacing: 0.32px;
   text-align: center;
-  background: var(--tj-color-theme-primary);
+  background: var(--tj-color-heading-primary);
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -1617,6 +1621,11 @@ START: Theme Header CSS
 .scroll-to-top.scroll-to-top-visible {
   opacity: 1;
   visibility: visible;
+}
+.scroll-to-top2{
+    left: 10px!important;
+    background-color: #41b13a!important;
+    color: var(--tj-color-common-white)!important;
 }
 .scroll-to-top i {
   font-weight: var(--tj-fw-medium);
@@ -15284,16 +15293,16 @@ Slider CSS
 .tj-slider-item .slider-content-area {
   background-repeat: no-repeat;
   background-position: right;
-  background-size: contain;
+  background-size: cover;
   height: 920px;
   border-radius: 0px 0px 500px 0px;
   position: relative;
   z-index: 2;
 }
 .tj-slider-item .slider-content-area .hero-shapes {
-  max-width: 56%;
+  max-width: 44%;
   width: 100%;
-  height: 92%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -15309,8 +15318,8 @@ Slider CSS
 }
 @media only screen and (min-width: 1400px) and (max-width: 1600px), only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tj-slider-item .slider-content-area .hero-shapes {
-    max-width: 58%;
-    height: 95%;
+    max-width: 44%;
+    height: 100%;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
@@ -15343,7 +15352,7 @@ Slider CSS
 .tj-slider-item .slider-content-area .slider-text {
   max-width: 730px;
   width: 100%;
-  padding-top: 195px;
+  padding-top: 225px;
   position: relative;
   z-index: 2;
 }
@@ -15374,7 +15383,7 @@ Slider CSS
   transition: transform 2000ms ease, opacity 2000ms ease;
   margin-bottom: 0;
   z-index: 1;
-  font-size: 55px;
+  font-size: 40px;
 }
 .tj-slider-item .slider-content-area .slider-text .slider-title span .shapes-icon {
   position: absolute;
@@ -16041,3 +16050,5 @@ Newsletter CSS
   transform: scale(1.02);
   opacity: 0.9;
 }
+
+
