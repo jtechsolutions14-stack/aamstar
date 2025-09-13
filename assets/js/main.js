@@ -211,13 +211,13 @@
    // Project Slider3 Js
    if ($(".tj-project-slider3").length > 0) {
       var project = new Swiper(".tj-project-slider3", {
-         slidesPerView: 3,
+         slidesPerView: 4,
          spaceBetween: 24,
          centeredSlides: true,
          loop: true,
          speed: 1500,
          autoplay: {
-            delay: 8500,
+            delay: 1000,
          },
          navigation: {
             nextEl: ".slider-next",
@@ -238,13 +238,13 @@
                slidesPerView: 2,
             },
             768: {
-               slidesPerView: 2,
+               slidesPerView: 3,
             },
             992: {
-               slidesPerView: 3,
+               slidesPerView: 4,
             },
             1024: {
-               slidesPerView: 3,
+               slidesPerView: 4,
             },
          },
       });

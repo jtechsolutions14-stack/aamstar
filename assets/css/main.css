@@ -403,10 +403,7 @@ i {
 /**
   Buttons CSS
 */
-.mega-menu{
-  padding:20px;
-  width: 800px!important;
-}
+
 .tj-header-btn {
   display: inline-flex;
   align-items: center;
@@ -1218,26 +1215,59 @@ START: Theme Header CSS
 .mainmenu ul > li.current-menu-ancestor a::before, .mainmenu ul > li.current-menu-ancestor a::after, .mainmenu ul > li.current-menu-item a::before, .mainmenu ul > li.current-menu-item a::after, .mainmenu ul > li:hover a::before, .mainmenu ul > li:hover a::after {
   width: 100%;
 }
-.mainmenu ul > li > .sub-menu {
-  text-align: left;
-  margin: 0;
-  list-style: none;
-  background: var(--tj-color-common-white);
+/* Base submenu styles */
+.mainmenu ul > li > .sub-menu.mega-menu {
   position: absolute;
+  top: 100%;                                
+  left: 100%;                                
+  transform: translateX(-50%) translateY(20px);
+  
+  width: 75vw;                              /* wide dropdown (adjust as needed) */
+  /* max-width: 1200px;                    */
+  
+  background: var(--tj-color-common-white);
+  margin: 0;
+  padding: 20px;
+  list-style: none;
+
   opacity: 0;
-  padding: 10px 0;
   visibility: hidden;
-  z-index: 100;
-  transition: 0.6s;
-  width: 230px;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-  gap: 0;
-  transform: translateY(20px);
-  top: 100%;
-  display: block;
-  left: 0;
   pointer-events: none;
+  
+  transition: all 0.5s ease;
+  z-index: 100;
+
+  text-align: left;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  gap: 20px;
 }
+
+/* Show on hover */
+.mainmenu ul > li.has-dropdown:hover > .sub-menu.mega-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+/* Submenu items */
+.mainmenu ul > li > .sub-menu.mega-menu li {
+  padding: 5px 0;
+}
+
+.mainmenu ul > li > .sub-menu.mega-menu li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.mainmenu ul > li > .sub-menu.mega-menu li a:hover {
+  color: var(--tj-color-primary);           /* use your theme color */
+}
+
+
 .mainmenu ul > li > .sub-menu::before {
   position: absolute;
   left: 0;
@@ -8865,8 +8895,8 @@ Project CSS
 }
 
 .tj-project-section-three {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 80px;
+  padding-bottom: 50px;
   background-color: var(--tj-color-theme-primary);
   background-repeat: no-repeat;
   background-size: cover;
@@ -9502,10 +9532,11 @@ Project CSS
      object-fit: cover;
 }
 .project-style-3 .project-content {
-  max-width: 350px;
+  /* max-width: 350px; */
   width: 100%;
   background: var(--tj-color-common-white);
-  padding: 30px 120px 30px 40px;
+  /* padding: 10px 78px 15px 18px; */
+  padding: 30px 100px 30px 40px;
   position: absolute;
   bottom: -155px;
   left: 0;
@@ -11694,6 +11725,13 @@ Blog CSS
   border-radius: 0px 0px 0px 65px;
   width: 100%;
 }
+
+.mega-menu .blog-item-two.style-2 .blog-images {
+  max-width: 135px;
+  border-radius: 50%;
+  width: 100%;
+}
+
 .blog-item-two.style-2 .blog-images a {
   display: inline-block;
   width: 100%;
@@ -16051,4 +16089,25 @@ Newsletter CSS
   opacity: 0.9;
 }
 
+body>.skiptranslate, .goog-logo-link, .gskiptranslate, .goog-te-gadget span, .goog-te-banner-frame, #goog-gt-tt, .goog-te-balloon-frame, div#goog-gt-tt {
+  display: none !important;
+}
 
+.goog-te-gadget {
+  color: transparent !important;
+  font-size: 0px;
+}
+
+.goog-text-highlight {
+  background: transparent !important;
+  box-shadow: transparent !important;
+}
+
+#google_translate_element select {
+  background: #2b1a12;
+  color: #fff4e4;
+  border: none;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 8px 12px
+}
