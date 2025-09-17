@@ -16111,3 +16111,79 @@ body>.skiptranslate, .goog-logo-link, .gskiptranslate, .goog-te-gadget span, .go
   border-radius: 3px;
   padding: 8px 12px
 }
+
+
+.graphic{
+  padding-right: 50px;
+}
+
+    .labels {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .labels div {
+      text-align: center;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .labels img {
+      width: 40px;
+      height: 40px;
+      display: block;
+      margin: 0 auto 5px;
+    }
+
+    .graphic .labels img {
+      width: 80px;
+      height: 80px;
+    }
+
+    .progress-container {
+      background: #eee;
+      border-radius: 10px;
+      height: 16px;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: #e63946;
+      border-radius: 10px 0 0 10px;
+      transition: width 1.5s ease-out;
+    }
+    .g_txt{
+      font-size: 12px;
+      font-weight: 900;
+    }
+    .mild{
+      color: #1f6306;
+    }
+    .medium{
+      color: chocolate;
+    }
+    .hot{
+      color: #e63946;
+    }
+
+    .numbers {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      color: #e63946;
+      margin-top: 6px;
+    }
+
+    /* Odometer-like counter */
+    .counter {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #e63946;
+      margin: 10px 0;
+      letter-spacing: 1px;
+      font-variant-numeric: tabular-nums;
+    }
