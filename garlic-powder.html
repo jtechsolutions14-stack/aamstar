@@ -402,43 +402,8 @@
                   </div>
                </div>
 
+
                <div class="col-lg-6">
-                  <div class="service-details-item graphic">
-                     <div class="service_content">
-                        <div class="scale">
-                           <div class="service-details-item">
-                              <h6 class="title">SPICEMETER-SHU :</h6>
-                           </div>
-                           <div class="labels">
-                              <div>
-                                 <img src="assets/images/chilli/mild.webp" alt="Mild">
-                                 <span class="g_txt mild">MILD</span>
-                              </div>
-                              <div>
-                                 <img src="assets/images/chilli/medium.webp" alt="Medium">
-                                 <span class="g_txt medium">MEDIUM</span>
-                              </div>
-                              <div>
-                                 <img src="assets/images/chilli/hot.webp" alt="Hot">
-                                 <span class="g_txt hot">HOT</span>
-                              </div>
-                           </div>
-                           <div class="progress-container">
-                              <div class="progress-fill" id="progressFill"></div>
-                           </div>
-                           <div class="numbers">
-                              <span>0</span>
-                              <span id="counter">50,000</span>
-                              <span>1,10,000</span>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-
-               </div>
-
-
-               <!-- <div class="col-lg-6">
                   <div class="service-details-item graphic">
                      <div class="service_content">
                         <div class="scale">
@@ -516,7 +481,7 @@
                      </div>
                   </div>
 
-               </div> -->
+               </div> 
 
 
             </div>
@@ -879,6 +844,70 @@
             <div class="row">
                <div class="col-12">
                   <div class="tj-heading-area text-center">
+                     <h2 class="sec-title">Similar Products</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+                  <div class="col-12">
+                     <div class="swiper tj-project-slider4">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide">
+                              <div class="project-style-4">
+                                 <div class="project-images">
+                                    <img src="assets/images/project/pr01.webp" alt="Images">
+                                    <div class="project-title">
+                                       <h4 class="title"><a href="#">Garlic Powder</a></h4>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="project-style-4">
+                                 <div class="project-images">
+                                    <img src="assets/images/project/pr02.webp" alt="Images">
+                                    <div class="project-title">
+                                       <h4 class="title"><a href="#">Chilli Powder</a></h4>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="project-style-4">
+                                 <div class="project-images">
+                                    <img src="assets/images/project/pr03.webp" alt="Images">
+                                    <div class="project-title">
+                                       <h4 class="title"><a href="#">Onion Powder</a></h4>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide">
+                              <div class="project-style-4">
+                                 <div class="project-images">
+                                    <img src="assets/images/project/pr01.webp" alt="Images">
+                                    <div class="project-title">
+                                       <h4 class="title"><a href="#">Tumeric Powder</a></h4>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- <div class="project-navigation">
+                           <div class="slider-prev"><i class="fa-regular fa-arrow-left"></i></div>
+                           <div class="slider-next"><i class="fa-regular fa-arrow-right"></i></div>
+                        </div> -->
+                     </div>
+                  </div>
+               </div>
+         </div>
+      </section>
+
+      <section class="tj-contact-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="tj-heading-area text-center">
                      <!-- <span class="sub-title">// Free Book Now //</span> -->
                      <h2 class="sec-title">Send Your Inquiry</h2>
                   </div>
@@ -1087,39 +1116,6 @@
    <script src="assets/js/meanmenu.js"></script>
    <script src="assets/js/validate.min.js"></script>
    <script src="assets/js/main.js"></script>
-   <script>
-      const currentValue = 50000;
-      const maxValue = 110000;
-
-      const counter = document.getElementById("counter");
-      const fill = document.getElementById("progressFill");
-
-      function animateCounter(target, duration = 1500) {
-         let start = 0;
-         const stepTime = Math.abs(Math.floor(duration / target));
-         const startTime = new Date().getTime();
-
-         function update() {
-            const now = new Date().getTime();
-            const elapsed = now - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-            const value = Math.floor(progress * target);
-            counter.textContent = value.toLocaleString();
-            if (progress < 1) {
-               requestAnimationFrame(update);
-            }
-         }
-         requestAnimationFrame(update);
-      }
-
-      function animateBar(value, max) {
-         const percent = (value / max) * 100;
-         fill.style.width = percent + "%";
-      }
-
-      animateCounter(currentValue);
-      animateBar(currentValue, maxValue);
-   </script>
 
    <script>
       document.querySelectorAll(".circular-progress").forEach(el => {

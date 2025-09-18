@@ -7090,7 +7090,7 @@ START: Team CSS
 }
 
 .team-information {
-  max-width: 550px;
+  /* max-width: 550px; */
 }
 .team-information .title {
   margin-bottom: 20px;
@@ -16114,7 +16114,7 @@ body>.skiptranslate, .goog-logo-link, .gskiptranslate, .goog-te-gadget span, .go
 
 
 .graphic{
-  padding-right: 50px;
+  padding-right: 30px;
 }
 
     .labels {
@@ -16187,3 +16187,56 @@ body>.skiptranslate, .goog-logo-link, .gskiptranslate, .goog-te-gadget span, .go
       letter-spacing: 1px;
       font-variant-numeric: tabular-nums;
     }
+
+
+    .circular-progress {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+
+  .circular-progress svg {
+    transform: rotate(-90deg);
+    width: 100px;
+    height: 100px;
+  }
+
+  circle {
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+  }
+
+  .bg {
+    stroke: #ccc;
+  }
+
+  .progress {
+    stroke: url(#gradient);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    transition: stroke-dashoffset 1s ease;
+  }
+
+  .label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .label span {
+    display: block;
+    font-size: 10px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .label h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #544742;
+  }
